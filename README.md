@@ -1,8 +1,10 @@
-Improved Drug-target Interaction Prediction with Intermolecular Graph Transformer
+IGT: Improved Drug-target Interaction Prediction with Intermolecular Graph Transformer
 =================================================================================
 
 **Authors**: Siyuan Liu*, Yusong Wang*, Yifan Deng, Liang He, Bin Shao, Jian Yin, Nanning Zheng, Tie-Yan Liu, Tong Wang#
 (*equal contribution, #corresponding author)
+
+Article: https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbac162/6581433
 
 # Introduction
 The identification of active binding drugs for target proteins (referred to as drug-target interaction prediction) is the key challenge in virtual screening, which plays an essential role in drug discovery. Although recent deep learningbased approaches achieve better performance than molecular docking, existing models often neglect topological or spatial of intermolecular information, hindering prediction performance. We recognize this problem and propose a novel approach called the Intermolecular Graph Transformer (IGT) that employs a dedicated attention mechanism to model intermolecular information with a three-way Transformer-based architecture. IGT outperforms state-of-the-art (SoTA) approaches by 9.1% and 20.5% over the second best option for binding activity and binding pose prediction respectively, and exhibits superior generalization ability to unseen receptor proteins than SoTA approaches. Furthermore, IGT exhibits promising drug screening ability against SARS-CoV-2 by identifying 83.1% active drugs that have been validated by wetlab experiments with near-native predicted binding poses.

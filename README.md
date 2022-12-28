@@ -1,5 +1,4 @@
 # Drug Interaction Research by Artificial Intelligence
-=================================================================================
 
 ## Overview
 

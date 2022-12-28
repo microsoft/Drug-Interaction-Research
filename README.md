@@ -1,4 +1,4 @@
-#Drug Interaction Research by Artificial Intelligence
+# Drug Interaction Research by Artificial Intelligence
 =================================================================================
 
 ## Overview
@@ -9,12 +9,14 @@ The project collects our AI-aided drug interaction research including drug-targe
 
 ### Dec 2022
 - *DSN-DDI: an accurate and generalized framework for drug–drug interaction prediction by dual-view representation learning* is accepted by *Briefings in Bioinformatics*.
--The source code and the pretrained models are available at [DSN-DDI-for-DDI-Prediction branch](https://github.com/microsoft/Drug-Interaction-Research/tree/DSN-DDI-for-DDI-Prediction) and give it a star if you find it useful!
+- The source code and the pretrained models are available at [DSN-DDI-for-DDI-Prediction branch](https://github.com/microsoft/Drug-Interaction-Research/tree/DSN-DDI-for-DDI-Prediction) and give it a star if you find it useful!
+
 ![image](https://github.com/microsoft/IGT-Intermolecular-Graph-Transformer/blob/DSN-DDI-for-DDI-Prediction/DSN-DDI.jpg)
 
 ### May 2022
 - *Improved drug–target interaction prediction with intermolecular graph transformer* is published on *Briefings in Bioinformatics*.
 - The source code and the pretrained models are available at [IGT-for-Structure-Based-DTI-Prediction branch](https://github.com/microsoft/Drug-Interaction-Research/tree/IGT-for-Structure-Based-DTI-Prediction) and give it a star if you find it useful!
+
 ![image](https://user-images.githubusercontent.com/29945329/163564297-4e651e96-d76d-4e6a-ab62-2212e07322b2.png)
 
 ## Citation

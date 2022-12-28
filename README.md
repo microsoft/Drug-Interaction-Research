@@ -1,53 +1,43 @@
-IGT: Improved Drug-target Interaction Prediction with Intermolecular Graph Transformer
+#Drug Interaction Research by Artificial Intelligence
 =================================================================================
 
-**Authors**: Siyuan Liu*, Yusong Wang*, Yifan Deng, Liang He, Bin Shao, Jian Yin, Nanning Zheng, Tie-Yan Liu, Tong Wang#
-(*equal contribution, #corresponding author)
+## Overview
 
-Article: https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbac162/6581433
+The project collects our AI-aided drug interaction research including drug-target interaction prediction, drug-drug interaction prediction, drug combinations, drug pair interaction prediction and so on. 
 
-# Introduction
-The identification of active binding drugs for target proteins (referred to as drug-target interaction prediction) is the key challenge in virtual screening, which plays an essential role in drug discovery. Although recent deep learningbased approaches achieve better performance than molecular docking, existing models often neglect topological or spatial of intermolecular information, hindering prediction performance. We recognize this problem and propose a novel approach called the Intermolecular Graph Transformer (IGT) that employs a dedicated attention mechanism to model intermolecular information with a three-way Transformer-based architecture. IGT outperforms state-of-the-art (SoTA) approaches by 9.1% and 20.5% over the second best option for binding activity and binding pose prediction respectively, and exhibits superior generalization ability to unseen receptor proteins than SoTA approaches. Furthermore, IGT exhibits promising drug screening ability against SARS-CoV-2 by identifying 83.1% active drugs that have been validated by wetlab experiments with near-native predicted binding poses.
+## News
 
+### Dec 2022
+- *DSN-DDI: an accurate and generalized framework for drug–drug interaction prediction by dual-view representation learning* is accepted by *Briefings in Bioinformatics*.
+-The source code and the pretrained models are available at [DSN-DDI-for-DDI-Prediction branch](https://github.com/microsoft/Drug-Interaction-Research/tree/DSN-DDI-for-DDI-Prediction) and give it a star if you find it useful!
+![image](https://github.com/microsoft/IGT-Intermolecular-Graph-Transformer/blob/DSN-DDI-for-DDI-Prediction/DSN-DDI.jpg)
+
+### May 2022
+- *Improved drug–target interaction prediction with intermolecular graph transformer* is published on *Briefings in Bioinformatics*.
+- The source code and the pretrained models are available at [IGT-for-Structure-Based-DTI-Prediction branch](https://github.com/microsoft/Drug-Interaction-Research/tree/IGT-for-Structure-Based-DTI-Prediction) and give it a star if you find it useful!
 ![image](https://user-images.githubusercontent.com/29945329/163564297-4e651e96-d76d-4e6a-ab62-2212e07322b2.png)
 
+## Citation
 
-# Prerequisites
+If you find these works useful, please kindly cite following articles:
 
-Please first download the data and model checkpoint using the `prerequisites.sh`.
-
-```bash
-bash prerequisites.sh
+```latex
+@article{liu2022improved,
+  title={Improved drug--target interaction prediction with intermolecular graph transformer},
+  author={Liu, Siyuan and Wang, Yusong and Deng, Yifan and He, Liang and Shao, Bin and Yin, Jian and Zheng, Nanning and Liu, Tie-Yan and Wang, Tong},
+  journal={Briefings in Bioinformatics},
+  volume={23},
+  number={5},
+  pages={bbac162},
+  year={2022},
+  publisher={Oxford University Press}
+}
 ```
 
-The following Python packages are needed for running the code:
+## Contact
 
-```
-numpy
-scipy
-pandas
-scikit-learn
-torch
-rdkit
-oddt
-hydra-core
-```
+Please contact Tong Wang (watong@microsoft.com) for technical support.
 
+## License
 
-# Run evaluation
-
-Below is an example command line for evaluting the model on the test set of LIT-PCBA (assuming two GPUs):
-
-```bash
-cd code
-python -m torch.distributed.launch \
-    --nnode=1 --node_rank=0 --nproc_per_node=2 --use_env evaluate.py \
-    hydra.run.dir=$PWD \
-    local_world_size=2 \
-    data_fpath=../data/lit-pcba dataset=lit-pcba batch_size=1 \
-    +model=igt \
-    load_from=../ckpt/igt.pt output_path=lit-pcba.eval.csv data_keys=keys/lit-pcba.pkl
-```
-
-To run evaluation on MUV, change all occurences of "lit-pcba" in the command line to "muv".
-
+This project is licensed under the terms of the MIT license. See [LICENSE](https://github.com/microsoft/Drug-Interaction-Research/blob/main/LICENSE) for additional details.

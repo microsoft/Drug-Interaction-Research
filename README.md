@@ -4,7 +4,7 @@
 #Equal contribution  
 *Corresponding authors: binshao@microsoft.com (B. S.); xzeng@hnu.edu.cn (X. Z.); watong@microsoft.com (T. W., Lead contact)  
 
-**Article**:
+**Article**: https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbac597/6966537
 
 # Introduction
 Drug-drug interaction (DDI) prediction identifies interactions of drug combinations in which the adverse side effects caused by the physicochemical incompatibility have attracted much attention. Previous studies usually model drug information from single or dual views of the whole drug molecules but ignore the detailed interactions among atoms, which leads to incomplete and noisy information and limits the accuracy of DDI prediction. In this work, we propose a novel dual-view drug representation learning network for DDI prediction (“DSN-DDI’’), which employs local and global representation learning modules iteratively and learns drug substructures from the single drug (“intra-view”) and the drug pair (“inter-view”) simultaneously. Comprehensive evaluations demonstrate that DSN-DDI significantly improved performance on DDI prediction for the existing drugs by achieving a relatively improved accuracy of 13.01% and an over 99% accuracy under the transductive setting. More importantly, DSN-DDI achieves a relatively improved accuracy of 7.07% to unseen drugs and shows the usefulness for real-world DDI applications. Finally, DSN-DDI exhibits good transferability on synergistic drug combination prediction and thus can serve as a generalized framework in the drug discovery field.

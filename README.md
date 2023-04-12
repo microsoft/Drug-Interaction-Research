@@ -43,7 +43,7 @@ If you find these works useful, please kindly cite following articles:
 
 ## Contact
 
-Please contact Tong Wang (watong@microsoft.com) for technical support.
+Please contact the leading corresponding author, Dr. Tong Wang (watong@microsoft.com) for technical supports and resource asks.
 
 ## License
 

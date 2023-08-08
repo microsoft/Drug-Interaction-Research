@@ -33,11 +33,9 @@ conda install -c rdkit rdkit
 
 # Dataset
 We provide the preprocessed DrugBank dataset for transductive setting and inductive setting, and Twosides dataset for transductive setting. 
-All datasets can be downloaded via the commands
+All datasets can be used via the commands
 ```bash
-wget https://msracb.blob.core.windows.net/pub/DSN-DDI-dataset.zip
 unzip DSN-DDI-dataset.zip
-rm DSN-DDI-dataset.zip
 cp -r dataset/drugbank  drugbank_test
 cp -r dataset/inductive drugbank_test
 cp -r dataset/twosides twosides_test
